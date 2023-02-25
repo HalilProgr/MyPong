@@ -1,0 +1,4 @@
+.vs/
+out/
+SFML-2.5.1/
+CMakeSettings.json
