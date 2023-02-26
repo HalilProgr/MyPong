@@ -15,7 +15,7 @@ void Paddle::setSpeed(float speed) {
 };
 void Paddle::setPosition(float x, float y) {
 	_rectangle.setPosition(x, y);
-};
+}
 
 
 const sf::Vector2f& Paddle::getSize() const {

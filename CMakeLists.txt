@@ -6,7 +6,9 @@ set(SFML_STATIC_LIBRARIES TRUE)
 find_package(SFML COMPONENTS graphics window system)
 
 add_executable(pong "src/main.cpp"
-					"src/paddle.cpp")
+					"src/paddle.cpp"
+					"src/circle.cpp"
+					"src/algorithm.cpp")
 
 target_link_directories(pong PRIVATE "inc")
 

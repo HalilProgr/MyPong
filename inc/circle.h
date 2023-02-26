@@ -1,27 +1,31 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <cmath>
 
-class Paddle {
+class Circle {
+	float const PI = std::acos(-1);
 
-	sf::RectangleShape  _rectangle;
-	sf::Vector2f		_sizeRectangle;
+	float _radius = 0;
+	sf::CircleShape  _circle;
 
+	float _angle = 0;
 	float _speed = 0;
 public:
-	Paddle(sf::Vector2f& size, float thickness,
+	Circle(float radius, float thickness,
 		const sf::Color& filColor,
 		const sf::Color& OutlineColor);
 
 	void setSpeed(float speed);
 	void setPosition(float x, float y);
-	
+	void setAngle(float angle);
 
-	const sf::Vector2f& getSize() const;
+	const float getRadius() const;
 	const sf::Vector2f& getPosition();
 	float getSpeed() const;
+	float getAngle() const;
 
 	void move(float deltaTime);
 
-	operator sf::RectangleShape()const;
+	operator sf::CircleShape()const;
 };
