@@ -1,4 +1,4 @@
-#include "../inc/paddle.h"
+#include <paddle.hpp>
 
 Paddle::Paddle(sf::Vector2f& size,
 	float thickness, const sf::Color& filColor, const sf::Color& OutlineColor) : _speed(0)

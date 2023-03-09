@@ -1,8 +1,8 @@
 #include <SFML/Graphics.hpp>
 
-#include "../inc/Paddle.h"
-#include "../inc/circle.h"
-#include "../inc/algorithm.h"
+#include <paddle.hpp>
+#include <circle.hpp>
+#include <algorithm.hpp>
 #include <iostream>
 
 int main()
@@ -29,16 +29,16 @@ int main()
     bool isPlaying = false;
 
     sf::Font font;
-    if (!font.loadFromFile("C:\\Users\\lea-k\\Desktop\\Visual code\\PongTest\\res\\sansation.ttf"))
-        return EXIT_FAILURE;
-
-    sf::Text pauseMessage;
-    pauseMessage.setFont(font);
-    pauseMessage.setCharacterSize(40);
-    pauseMessage.setPosition(170.f, 150.f);
-    pauseMessage.setFillColor(sf::Color::White);
-    pauseMessage.setString("Welcome to SFML pong!\nPress space to start the game");
-
+    //if (!font.loadFromFile("C:\\Users\\lea-k\\Desktop\\Visual code\\PongTest\\res\\sansation.ttf"))
+    //    return EXIT_FAILURE;
+    
+    //sf::Text pauseMessage;
+    //pauseMessage.setFont(font);
+    //pauseMessage.setCharacterSize(40);
+    //pauseMessage.setPosition(170.f, 150.f);
+    //pauseMessage.setFillColor(sf::Color::White);
+    //pauseMessage.setString("Welcome to SFML pong!\nPress space to start the game");
+    
     Algoritm algoritm(window, leftPaddle, rightPaddle, circle);
 
     while (window.isOpen())

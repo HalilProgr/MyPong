@@ -1,4 +1,4 @@
-#include "../inc/algorithm.h"
+#include <algorithm.hpp>
 
 void Algoritm::collisionsWithPaddle()
 {

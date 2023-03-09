@@ -1,4 +1,4 @@
-#include "../inc/circle.h"
+#include <circle.hpp>
 
 Circle::Circle(float radius, float thickness, const sf::Color& filColor, const sf::Color& OutlineColor):_radius(radius)
 {

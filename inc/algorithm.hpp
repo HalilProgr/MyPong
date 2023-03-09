@@ -1,7 +1,7 @@
 #pragma once
 
-#include "circle.h"
-#include "paddle.h"
+#include "circle.hpp"
+#include "paddle.hpp"
 
 class Algoritm {
 	float const PI = std::acos(-1);
